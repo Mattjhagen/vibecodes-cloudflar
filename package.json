@@ -11,6 +11,7 @@
 		"lint": "eslint .",
 		"preview": "npm run build && vite preview",
 		"deploy": "bun --env-file .prod.vars scripts/deploy.ts",
+		"deploy:pages": "npm run build",
 		"local": "wrangler dev --experimental-vectorize-bind-to-prod --local",
 		"cf-typegen": "wrangler types --include-runtime false",
 		"test": "vitest run",
