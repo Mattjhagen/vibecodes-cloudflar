@@ -4,7 +4,7 @@
  */
  {
 	// "$schema": "node_modules/wrangler/config-schema.json",
-	"name": "vibesdk-production",
+	"name": "vibecodes-space",
 	"main": "worker/index.ts",
 	"compatibility_date": "2025-08-10",
 	"compatibility_flags": ["nodejs_compat"],
@@ -129,13 +129,13 @@
 	],
 	"routes": [
         {
-            "pattern": "build.cloudflare.dev",
+            "pattern": "vibecodes.space",
             "custom_domain": true
         },
         {
-            "pattern": "*build-preview.cloudflare.dev/*",
+            "pattern": "*vibecodes.space/*",
             "custom_domain": false,
-            "zone_id": "db01fac4261b2604aacad8410443a3e2"
+            "zone_id": "71094e4bbec3f32ada982a49e8cd2d32"
         }
     ],
 	"vars": {
@@ -144,7 +144,7 @@
         "DISPATCH_NAMESPACE": "vibesdk-default-namespace",
         "ENABLE_READ_REPLICAS": "true",
         "CLOUDFLARE_AI_GATEWAY": "vibesdk-gateway",
-        "CUSTOM_DOMAIN": "",
+        "CUSTOM_DOMAIN": "vibecodes.space",
         "MAX_SANDBOX_INSTANCES": "10",
         "SANDBOX_INSTANCE_TYPE": "standard"
     },
