@@ -63,13 +63,9 @@
 			"class_name": "UserAppSandboxService",
 			"image": "./SandboxDockerfile",
             // Altering max_instances value will have no effect. Please use the MAX_SANDBOX_INSTANCES var instead.
-			"max_instances": 2900,
+			"max_instances": 10,
             // ATTENTION: Altering instance_type value will have no effect. Please use the SANDBOX_INSTANCE_TYPE var instead.
-            "instance_type": {
-                "vcpu": 4,
-                "memory_mib": 4096,
-                "disk_mb": 10240
-            },
+            "instance_type": "standard",
             "rollout_step_percentage": 100
 		}
 	],
@@ -77,7 +73,7 @@
 		{
 			"binding": "DB",
 			"database_name": "vibesdk-db",
-			"database_id": "c4721a2b-b96a-428a-8b2a-b3d255b307e9",
+			"database_id": "b477f98b-a336-4172-bb6e-b872668b9ae9",
 			"migrations_dir": "migrations",
 			"remote": true
 		}
@@ -108,7 +104,7 @@
     "kv_namespaces": [
         {
             "binding": "VibecoderStore",
-            "id": "f066f3c2e4824981b48e8586c04db9c1",
+            "id": "b371ee3b65ef462ba52d4d0dec04ca95",
             "remote": true
         }
     ],
@@ -140,13 +136,10 @@
     ],
 	"vars": {
         "TEMPLATES_REPOSITORY": "https://github.com/cloudflare/vibesdk-templates",
-        "ALLOWED_EMAIL": "",
         "DISPATCH_NAMESPACE": "vibesdk-default-namespace",
         "ENABLE_READ_REPLICAS": "true",
         "CLOUDFLARE_AI_GATEWAY": "vibesdk-gateway",
-        "CUSTOM_DOMAIN": "vibecodes.space",
-        "MAX_SANDBOX_INSTANCES": "10",
-        "SANDBOX_INSTANCE_TYPE": "standard"
+        "MAX_SANDBOX_INSTANCES": "10"
     },
 	"workers_dev": false,
 	"preview_urls": false
