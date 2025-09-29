@@ -73,7 +73,7 @@
 		{
 			"binding": "DB",
 			"database_name": "vibesdk-db",
-			"database_id": "b477f98b-a336-4172-bb6e-b872668b9ae9",
+			"database_id": "8f93b9bc-8fe0-442e-80ce-83e324fac789",
 			"migrations_dir": "migrations",
 			"remote": true
 		}
@@ -97,14 +97,14 @@
     "r2_buckets": [
       {
         "binding": "TEMPLATES_BUCKET",
-        "bucket_name": "vibesdk-templates",
+        "bucket_name": "vibesdk",
         "remote": true
       }
     ],
     "kv_namespaces": [
         {
             "binding": "VibecoderStore",
-            "id": "b371ee3b65ef462ba52d4d0dec04ca95",
+            "id": "973f4889b9f3429d92142232ccf916d2",
             "remote": true
         }
     ],
